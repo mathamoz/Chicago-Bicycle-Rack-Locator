@@ -22,12 +22,12 @@ Accomplishments
 Details
 =======
 
-*PHP Code*
+### PHP Code ###
 There are two PHP scripts, racks.php and search_racks.php.  racks.php takes the users GPS coordinates as input and sends back a JSON list of bicycle racks near them.
 
 search_racks.php takes the users GPS coordinates and a search string as input and queries Yahoo places to find a location matching the users search.  If Yahoo returns a result the the Latitude and Longitude used to query will be from the Yahoo result, otherwise we use the users current location and query the database for an address or community like the users search.
 
-*Java Code*
+### Java Code ###
 The main source file is BikeRackLocatorActivity.java.  It contains the bulk of the program logic for displaying the map and bicycle racks, and also for launching the search activity.  I have a class, BaseAvailableActivity (referred to as glob for global) that is available to the different activities.  I use this class to pass data between the activities such as the users location, current zoom level and an object for the currently selected bicycle rack, if there is one.
 
 ListViewActivity.java is used to display a list of bicycle racks vs the map view.
